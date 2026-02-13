@@ -1,0 +1,63 @@
+body{
+    background-image: radial-gradient(rgb(222, 252, 249) , rgb(202, 222, 252)) ;
+ }
+
+.frist{
+    display: flex;
+    gap: 1rem;
+}
+
+.stars{
+    width: 10px auto;
+    height: 40px;
+}
+
+h1{
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    justify-content: center; /*  x توسيط العرض */
+    align-items: center;    /*  y توسيط الطول   */ 
+    height: 300px;
+    color: rgb(204, 168, 233);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+div{
+    display: flex;
+    justify-content: center; /*  x توسيط العرض */
+    align-items: center;    /*  y توسيط الطول   */ 
+    /* height: 50vh; */
+}
+
+form{
+    background-color: rgba(204, 168, 233, 0.628);
+    padding: 20px;      /* يزود الايطار */
+    width: 80%;         /* ياخذ ٨٠ بالمية من عرض البودي */
+    display: flex;
+    flex-wrap: wrap;    /* راب داخل البوردر  */
+    gap: 6px;           /* المسافات */
+    border-radius: 7px;      /* حواف ناعمه للمستطيل */
+}
+
+form input{
+    background-color: rgb(202, 222, 252);
+    border: none;           /* شلنا تحديد البوردر */
+    outline: none;          /* التحديد الي يجي لمن نضغط الخانه شلناها */
+    color: rgb(24, 31, 39);
+    padding: 5px 10px;     /* زياده بوردر الانبوت  */
+    flex-basis: 200px;     /* = width: 200px;  */   /* عرض مستطيل الانبوت*/
+    flex-grow: 1;          /* نمو العنصر قد مساحه الاب */
+}
+
+form button{
+    background-color: rgb(185, 180, 238);
+    box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.173);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    cursor: pointer;        /* اذا جا الموشر عليه يكون اصبع تاشر */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;      /* حواف ناعمه للمستطيل */
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Syriac:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    background-image: radial-gradient(rgb(222, 252, 249) , rgb(202, 222, 252)) ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0 2rem;
+    max-width: 1100px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-weight: 300px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #3d3a3a;
+}
+.navigation a:hover{
+    color:#b695d1;
+}
+
+hr{
+    opacity: 20%;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #CCA8E9;
+}
+/* //////////////////////////////////////////////////////////////// */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16rem auto;
+  max-width: 1100px;
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.name{
+    font-size: 3rem;
+    color: white;
+}
+.title{
+    font-size: 3rem;
+    color: #CCA8E9;
+}
+.heroBtns{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.hireMe{
+    background-color: #C3BEF0;
+    color: white;
+    border-radius: 23px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cv{
+    background-color: rgba(57, 62, 70, 0.75);
+    color: white;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(4px);
+}
+.heroImg{
+    position: absolute;
+    transform: translateX(450px) translateY(20px);
+    width: 700px;
+
+}
+
+/* -------------------------------------------------------- */
+
+.AboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem auto;
+    max-width: 1100px;
+    gap: 1rem;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+.textTitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+.aboutName {
+  color: #000000;
+}
+.aboutTitle {
+  color: #C3BEF0;
+}
+.aboutMePar{
+    text-align: justify;
+    color: rgba(5, 5, 5, 0.75);
+}
+
+.AboutMeimg{
+    position:static;
+    transform: translateX(-100px) translateY(20px);
+    width: 700px;
+}
+/* -------------------------------------------------------- */
+.work {
+  background-image: url("assets/svg/background.svg");
+  padding: 10rem 10rem;
+  margin: 5rem 0rem;
+}
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+.projectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  font-size: 2rem;
+}
+.work ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.work li {
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+}
+.work li img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.work li :hover {
+  transform: scale(1.5);
+}
+/* -------------------------------------------------------- */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+.contact h3, .contact a {
+  color: #000000;
+  text-decoration: none;
+}
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+/* -------------------------------------------------------- */
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
